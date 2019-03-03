@@ -1,10 +1,9 @@
 package cn.dm.mapper;
 import cn.dm.pojo.DmCinema;
-import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-
 import java.util.List;
 import java.util.Map;
+import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
 public interface DmCinemaMapper {
