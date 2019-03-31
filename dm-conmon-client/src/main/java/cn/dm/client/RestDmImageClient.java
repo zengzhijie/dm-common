@@ -1,19 +1,16 @@
 package cn.dm.client;
 
-import cn.dm.pojo.DmImage;
-
-import cn.dm.fallback.DmImageClientFallBack;
-
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import cn.dm.config.DmConfiguration;
+import cn.dm.fallback.DmImageClientFallBack;
+import cn.dm.pojo.DmImage;
 import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RequestBody;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by dm
@@ -37,7 +34,5 @@ public interface RestDmImageClient {
     public Integer qdtxModifyDmImage(@RequestBody DmImage dmImage) throws Exception;
 
     @RequestMapping(value = "/queryDmImageList", method = RequestMethod.POST)
-    public List<DmImage> queryDmImageList(@RequestParam("targetId") Long targetId,
-                                          @RequestParam("type") Integer type,
-                                          @RequestParam("category") Integer category) throws Exception ;
+    public List<DmImage> queryDmImageList(@RequestParam("targetId") long targetId, @RequestParam("type") Integer type, @RequestParam("category") Integer category) throws Exception;
 }

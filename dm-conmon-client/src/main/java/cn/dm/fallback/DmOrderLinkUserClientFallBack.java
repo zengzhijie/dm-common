@@ -2,6 +2,7 @@ package cn.dm.fallback;
 
 import cn.dm.pojo.DmOrderLinkUser;
 
+import cn.dm.client.RestDmOrderLinkUserClient;
 import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.Map;

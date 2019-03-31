@@ -2,6 +2,7 @@ package cn.dm.fallback;
 
 import cn.dm.pojo.DmUser;
 
+import cn.dm.client.RestDmUserClient;
 import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.Map;

@@ -2,6 +2,7 @@ package cn.dm.fallback;
 
 import cn.dm.pojo.DmArea;
 
+import cn.dm.client.RestDmAreaClient;
 import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.Map;

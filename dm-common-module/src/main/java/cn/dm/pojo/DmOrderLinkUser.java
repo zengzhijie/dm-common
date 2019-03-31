@@ -22,7 +22,7 @@ public class DmOrderLinkUser implements Serializable {
     //
     private Date createdTime;
     //
-    private Long updatedTime;
+    private Date updatedTime;
     //get set 方法
     public void setId (Long  id){
         this.id=id;
@@ -72,10 +72,10 @@ public class DmOrderLinkUser implements Serializable {
     public  Date getCreatedTime(){
         return this.createdTime;
     }
-    public void setUpdatedTime (Long  updatedTime){
+    public void setUpdatedTime (Date  updatedTime){
         this.updatedTime=updatedTime;
     }
-    public  Long getUpdatedTime(){
+    public  Date getUpdatedTime(){
         return this.updatedTime;
     }
 }
